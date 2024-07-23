@@ -11,7 +11,37 @@ export default function Products() {
         <ProductCards
           productName={"Robotic Dustbin"}
           img={
-            "https://cdnassets.hw.net/dims4/GG/555ba15/2147483647/resize/480x%3E/quality/90/?url=https%3A%2F%2Fcdnassets.hw.net%2Fb1%2Fb6%2F4d0cd9004f89a1b865d239e8f9d5%2Fbrokk-110.jpg"
+            "https://img.rolandberger.com/content_assets/content_images/captions/Roland_Berger-24_2195_Humanoid_robots-IT_image_caption_none.jpg"
+          }
+          description={
+            "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+          }
+        />
+
+        <ProductCards
+          productName={"Chiti Robo - F"}
+          img={
+            "https://img.rolandberger.com/content_assets/content_images/captions/Roland_Berger-24_2195_Humanoid_robots-IT_image_caption_none.jpg"
+          }
+          description={
+            "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+          }
+        />
+
+        <ProductCards
+          productName={"Chiti Robo - F"}
+          img={
+            "https://img.rolandberger.com/content_assets/content_images/captions/Roland_Berger-24_2195_Humanoid_robots-IT_image_caption_none.jpg"
+          }
+          description={
+            "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+          }
+        />
+
+        <ProductCards
+          productName={"Chiti Robo - F"}
+          img={
+            "https://img.rolandberger.com/content_assets/content_images/captions/Roland_Berger-24_2195_Humanoid_robots-IT_image_caption_none.jpg"
           }
           description={
             "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."

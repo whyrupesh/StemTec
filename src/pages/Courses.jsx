@@ -8,7 +8,7 @@ export default function Courses() {
         Our Courses
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-7 flex flex-col ml-12">
         <CoursesCard
           courseName={"Robotics - Beginner"}
           description={

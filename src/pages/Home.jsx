@@ -1,10 +1,12 @@
 import React from "react";
 import Products from "./Products";
 import Courses from "./Courses";
+import About from "./About";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <div className=" flex justify-center ">
         <img
           src="https://assets.technologynetworks.com/production/dynamic/images/content/379970/are-robots-making-humans-lazier-when-at-work-379970-960x540.jpg"
@@ -31,7 +33,7 @@ export default function Home() {
         </div>
         <button
           type="button"
-          className="mt-10 text-white bg-gray-900 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="mt-10 text-white bg-gray-900 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
         >
           Our Products
         </button>
@@ -41,6 +43,9 @@ export default function Home() {
       <Products />
       <hr className="mt-10" />
       <Courses />
-    </>
+      <hr className="mt-10" />
+      <About />
+      <Footer />
+    </div>
   );
 }

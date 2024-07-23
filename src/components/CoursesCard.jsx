@@ -2,8 +2,8 @@ import React from "react";
 
 export default function CoursesCard({ courseName, description, img }) {
   return (
-    <div>
-      <div class="max-w-full max-h-full flex flex-row bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-10/12">
+      <div class="max-w-full max-h-full flex flex-row bg-white border border-gray-200 rounded-lg shadow dark:bg-blue-950 dark:border-blue-700">
         <a href="#">
           <img class="rounded-t-lg max-h-80" src={img} alt="" />
         </a>
@@ -19,7 +19,7 @@ export default function CoursesCard({ courseName, description, img }) {
             </p>
             <a
               href="#"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
             >
               Read more
               <svg
