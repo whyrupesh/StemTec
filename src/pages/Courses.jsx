@@ -4,11 +4,9 @@ import CoursesCard from "../components/CoursesCard";
 export default function Courses() {
   return (
     <div>
-      <div className="text-3xl font-bold mt-10 mb-3 text-gray-700 ">
-        Our Courses
-      </div>
+      <div className="text-2xl font-bold  mb-3 text-gray-700 ">Our Courses</div>
 
-      <div className="space-y-7 flex flex-col ml-12">
+      <div className=" flex flex-col ">
         <CoursesCard
           courseName={"Robotics - Beginner"}
           description={

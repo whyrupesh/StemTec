@@ -2,28 +2,28 @@ import React from "react";
 
 export default function CoursesCard({ courseName, description, img }) {
   return (
-    <div className="w-10/12">
-      <div class="max-w-full max-h-full flex flex-row bg-white border border-gray-200 rounded-lg shadow dark:bg-blue-950 dark:border-blue-700">
+    <div className="w-10/12 m-4">
+      <div className="max-w-full max-h-full flex flex-col md:flex-row  bg-white border border-gray-200 rounded-lg shadow dark:bg-blue-950 dark:border-blue-700">
         <a href="#">
-          <img class="rounded-t-lg max-h-80" src={img} alt="" />
+          <img className="rounded-t-lg max-h-80" src={img} alt="" />
         </a>
         <div className="flex flex-column">
-          <div class="p-5">
+          <div className="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {courseName}
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
               {description}
             </p>
             <a
               href="#"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
             >
               Read more
               <svg
-                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

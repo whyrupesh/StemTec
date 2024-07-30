@@ -15,7 +15,7 @@ export default function Navbar() {
       <div>
         <Link to="/">
           <h1 className="font-semibold w-4/5 text-3xl text-gray-700">
-            <span className="text-blue-700">Stem</span>Tec
+            <span className="text-indigo-700">Stem</span>Tec
           </h1>
         </Link>
       </div>
@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
         <nav className="">
           <div className={`nav-elements  ${showNavbar && "active"}`}>
-            <ul className="flex list-none	justify-between	space-x-10">
+            <ul className="flex list-none	justify-between	space-x-10 text-white md:text-gray-900">
               <li>
                 <Link
                   to="/"

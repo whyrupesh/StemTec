@@ -3,29 +3,32 @@ import Products from "./Products";
 import Courses from "./Courses";
 import About from "./About";
 import Footer from "../components/Footer";
+import Contact from "./Contact";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <div className=" flex justify-center ">
-        <img
-          src="https://assets.technologynetworks.com/production/dynamic/images/content/379970/are-robots-making-humans-lazier-when-at-work-379970-960x540.jpg"
-          alt="Robot Picture"
-          className="w-auto"
-        />
-        <div className="absolute top-64 text-center text-white  text-3xl">
-          Hey, We are from <span className="font-bold text-4xl">StemTec</span>.
-          <div className="text-2xl ">We bring robots to life.</div>
+        <img src="/download.png" alt="Robot Picture" className="w-full" />
+      </div>
+      <div className="flex flex-col items-center">
+        <div className="font-semibold text-5xl md:text-9xl text-gray-700">
+          <span className="text-indigo-700">Stem</span>Tec
+        </div>
+      </div>
+      <div className="flex flex-col items-center ">
+        <div className="text-gray-700 text-sm md:text-3xl ">
+          Shaping Tomorrow with AI, Smart Robotics and IoT
         </div>
       </div>
 
-      <hr className="mt-10" />
+      <hr className="mt-6" />
 
-      <div className="justify-center content-center flex flex-col items-center mt-20">
-        <div className="flex justify-center font-bold text-4xl p-5 text-gray-700">
+      {/* <div className="justify-center content-center flex flex-col items-center mt-5">
+        <div className="flex justify-center font-bold text-2xl md:text-5xl p-5 text-gray-700">
           Why StemTec robots?
         </div>
-        <div className="flex justify-center text-center w-11/12">
+        <div className="flex justify-center text-sm md:text-xl text-center w-11/12">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
           veritatis doloribus iste cupiditate modi! Voluptatum, quo? Quae animi
           maiores esse vitae aliquam qui. Aliquid debitis cumque veritatis
@@ -37,15 +40,17 @@ export default function Home() {
         >
           Our Products
         </button>
-      </div>
+      </div> */}
 
-      <hr className="mt-10" />
+      {/* <hr className="mt-10" /> */}
       <Products />
-      <hr className="mt-10" />
-      <Courses />
+      {/* <hr className="mt-10" />
+      <Courses /> */}
       <hr className="mt-10" />
       <About />
+      <hr className="mt-10" />
+      <Contact />
       <Footer />
-    </div>
+    </>
   );
 }

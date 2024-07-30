@@ -11,25 +11,25 @@ body {
 }
 
 #changingText::before {
-  content: "Building Softwares 👨‍💻";
+  content: "Empowering Industries ";
   animation: animate infinite 8s;
   padding-left: 10px;
 }
 
 @keyframes animate {
   0% {
-    content: "Building Softwares 👨‍💻";
+    content: "Empowering Industries ";
   }
   25% {
-    content: "Solving Problems 🐞";
+    content: "Shaping Tomorrow ";
   }
 
   50% {
-    content: "lifting weights 💪";
+    content: "Connecting the Future ";
   }
 
   75% {
-    content: "sleeping in b/w 😴";
+    content: "Next-Gen Innovation ";
   }
 }
 
