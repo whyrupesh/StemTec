@@ -42,3 +42,6 @@ export default function ProductCards({ productName, description, img }) {
     </div>
   );
 }
+
+// RMA - REturn merchanside authorization
+// img, orderid, name, phone number, desctiption
