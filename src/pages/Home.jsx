@@ -4,6 +4,10 @@ import Courses from "./Courses";
 import About from "./About";
 import Footer from "../components/Footer";
 import Contact from "./Contact";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function Home() {
   return (
@@ -24,7 +28,10 @@ export default function Home() {
 
       <hr className="mt-6" />
 
-      {/* <div className="justify-center content-center flex flex-col items-center mt-5">
+      {/* <div
+        className="justify-center content-center flex flex-col items-center mt-5"
+        data-aos="fade-in"
+      >
         <div className="flex justify-center font-bold text-2xl md:text-5xl p-5 text-gray-700">
           Why StemTec robots?
         </div>
@@ -54,3 +61,9 @@ export default function Home() {
     </>
   );
 }
+
+//about the product and their photo
+// about the compay
+// about the course page
+// email id
+// about us pagre photos

@@ -1,8 +1,10 @@
 import React from "react";
 import ProductCards from "../components/ProductCards";
 import ProductCardsTwo from "../components/ProductCardsTwo";
+import { useNavigate } from "react-router-dom";
 
 export default function Products() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="text-2xl font-bold mt-3 mb-3 text-gray-700">
@@ -10,11 +12,10 @@ export default function Products() {
       </div>
       <div className="flex flex-col md:flex-row">
         <ProductCardsTwo
-          name={"Demo Product"}
-          img={
-            "https://img.rolandberger.com/content_assets/content_images/captions/Roland_Berger-24_2195_Humanoid_robots-IT_image_caption_none.jpg"
-          }
+          name={"SmartSence IoT Development Board"}
+          img="./iot.jpg"
           price={3999}
+          route={"IotDevelopmentBoard"}
         />
 
         <ProductCardsTwo

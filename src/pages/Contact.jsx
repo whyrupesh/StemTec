@@ -1,17 +1,44 @@
 import React, { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import emailjs from "@emailjs/browser";
+import Loading from "../components/Loading";
 
 export default function Contact() {
   const [email, setemail] = useState("");
   const [subject, setsubject] = useState("");
   const [message, setmessage] = useState("");
+  const [loading, setloading] = useState(false);
 
-  function handleSubmit() {
-    setemail("");
-    setsubject("");
-    setmessage("");
+  async function sendEmail(message, email, subject) {
+    try {
+      const result = await emailjs.send(
+        "service_lju881e",
+        "template_clshm9h",
+        { message, email, subject },
+        "jPnflVepk7r9V0uwi"
+      );
+      console.log("Email sent successfully:", result.text);
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   }
+
+  async function handleSubmit(event) {
+    setloading(true);
+    event.preventDefault(); // Prevent the default form submission behavior
+    console.log("msg send");
+    await sendEmail(message, email, subject); // Wait for the email to be sent
+    console.log("msg sent");
+    setloading(false);
+
+    setemail(""); // Clear the email field
+    setsubject(""); // Clear the subject field
+    setmessage(""); // Clear the message field
+  }
+
   return (
-    <div>
+    <div data-aos="flip-right">
       <section className="bg-white dark:bg-white-900">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-indigo-900 dark:text-indigo-950">
@@ -75,11 +102,12 @@ export default function Contact() {
             </div>
 
             <button
-              onClick={() => handleSubmit()}
+              onClick={handleSubmit}
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             >
               Send message
             </button>
+            {loading && <Loading />}
           </form>
         </div>
       </section>

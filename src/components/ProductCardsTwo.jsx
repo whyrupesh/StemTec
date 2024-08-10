@@ -1,15 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-export default function ProductCardsTwo({ name, img, price }) {
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
+export default function ProductCardsTwo({ name, img, price, route }) {
   const navigate = useNavigate();
   return (
-    <div onClick={() => navigate("/ProductPage")}>
+    <div data-aos="fade-right" onClick={() => navigate(`./${route}`)}>
       <div className="relative flex w-full md:mr-4 max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
         <a
           className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl"
           href="#"
         >
-          <img className="object-cover" src={img} alt="product image" />
+          <img
+            className="object-cover border-2 rounded-xl"
+            src={img}
+            alt="product image"
+          />
           <span className="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">
             new
           </span>

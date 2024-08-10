@@ -7,6 +7,7 @@ import Courses from "./pages/Courses";
 import Contact from "./pages/Contact";
 import { Routes, Route } from "react-router-dom";
 import ProductPage from "./components/ProductPage";
+import IotDevelopmentBoard from "./products/IotDevelopmentBoard";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/Courses" element={<Courses />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/ProductPage" element={<ProductPage />} />
+        <Route path="/IotDevelopmentBoard" element={<IotDevelopmentBoard />} />
       </Routes>
     </>
   );
