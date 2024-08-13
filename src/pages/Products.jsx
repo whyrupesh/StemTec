@@ -19,20 +19,18 @@ export default function Products() {
         />
 
         <ProductCardsTwo
-          name={"Demo Product"}
-          img={
-            "https://t3.ftcdn.net/jpg/05/90/82/32/360_F_590823233_97YNah2bYsEW9llwf7UNK5L3r1cM0Ei3.jpg"
-          }
+          name={"Stembot x2 AI version"}
+          img={"./agv.jpg"}
           price={3999}
         />
 
-        <ProductCardsTwo
+        {/* <ProductCardsTwo
           name={"Demo Product"}
           img={
             "https://wallpapers.com/images/hd/robot-head-3d-android-phone-2508ppt8010h1nf1.jpg"
           }
           price={3999}
-        />
+        /> */}
       </div>
     </>
   );

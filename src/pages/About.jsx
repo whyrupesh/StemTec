@@ -38,12 +38,34 @@ export default function About() {
               About us
             </span>
             <h2 className="my-4 font-bold text-3xl  sm:text-4xl ">
-              About <span className="text-indigo-600">Our Company</span>
+              About <span className="text-indigo-600">StemTec</span>
             </h2>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-              commodi doloremque, fugiat illum magni minus nisi nulla numquam
-              obcaecati placeat quia, repellat tempore voluptatum.
+              <div>
+                StemTec is a forward-thinking company specializing in the
+                development and application of AI and robotics solutions
+                tailored specifically for the education and industry sectors.
+                The company is dedicated to transforming learning environments
+                by integrating cutting-edge AI technologies and robotic systems,
+                enhancing the educational experience for students and educators
+                alike.
+              </div>
+              <br />
+              <div>
+                In the industrial sector, StemTec's innovative solutions are
+                designed to streamline operations, improve efficiency, and
+                foster a future-ready workforce. By merging advanced robotics
+                with AI, StemTec provides industries with tools that not only
+                automate tasks but also enable smarter decision-making
+                processes.
+              </div>
+              <br />
+              <div>
+                StemTec's mission is to bridge the gap between technology and
+                practical application, making sophisticated AI and robotics
+                accessible and beneficial to educational institutions and
+                industrial enterprises globally.
+              </div>
             </p>
           </div>
         </div>

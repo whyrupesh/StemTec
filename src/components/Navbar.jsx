@@ -54,7 +54,7 @@ export default function Navbar() {
                   Products
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/Courses"
                   className="hover:underline decoration-sky-800 underline-offset-4"
@@ -62,7 +62,7 @@ export default function Navbar() {
                 >
                   Courses
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   to="/Contact"
